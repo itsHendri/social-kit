@@ -27,6 +27,7 @@ If there is no `brand.md` at the root, setup hasn't run. Before anything else, o
 - When the owner rewrites or rejects a draft, ask what was off, and offer to write the lesson into `voice.md` or the channel file. That is how the drafts get better.
 - Move media, don't delete it. Ask before deleting anything.
 - Names: lowercase kebab-case for files and folders, dates first in ISO (`2026-12-01-studio-tour`), versions as `-v01`, `-v02`.
+- The `kit` remote is the kit's own repo, for updates only: never push to it. For "pull kit updates", run `git pull kit main`, and where a file clashes, show the owner both versions and let them pick. The owner's own repo, if they made one, is `origin`; push there only when they ask.
 - Platform limits change. Check a limit on the platform's own help pages before relying on it, and write the date you checked into the channel file.
 
 ## The owner's setup

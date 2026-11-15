@@ -17,10 +17,15 @@ Nothing posts on its own. Claude writes drafts and you post them yourself.
 
 ## Start
 
-1. Open this folder in Claude Code.
-2. Say "set me up".
+Open Claude Code in any folder and paste this:
 
-Claude explains what it's going to do, then works through it with you.
+```text
+Set me up with the social kit at https://github.com/itsHendri/social-kit. Ask me where to put it, clone it there, then read its CLAUDE.md and follow .claude/skills/setup/SKILL.md from the start.
+```
+
+Claude asks where the folder should go, clones it, and starts setup. It explains what it's going to do, then works through it with you. Next time, open Claude Code in that folder and carry on.
+
+Already have the folder? Open Claude Code in it and say "set me up".
 
 ## What you end up with
 
@@ -53,3 +58,5 @@ learnings.md           what worked and what didn't, from audits and reviews
 Edit any file yourself, or ask Claude: "add TikTok as a channel", "redo my voice file", "make me a skill for X". The setup skill can run again for just one part.
 
 The `kit/` folder is what setup works from. Leave it in place so setup can run again.
+
+When the kit gets better, ask Claude to "pull kit updates". It runs `git pull kit main`, which brings in the new `kit/` files and leaves your own files alone. If a file you both changed clashes, Claude shows you both versions and you pick.
