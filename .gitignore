@@ -1,0 +1,16 @@
+# Secrets
+.env
+.env.*
+
+# Mac
+.DS_Store
+
+# Video and big raw files stay out of git: git keeps every version forever.
+# Setup asks whether to keep these lines.
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.heic
+*.psd
+*.zip
