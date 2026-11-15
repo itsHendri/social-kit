@@ -16,6 +16,7 @@ If there is no `brand.md` at the root, setup hasn't run. Before anything else, o
 - `content/incoming/`: new media, not planned yet. `notes.md` there says what it is.
 - `content/YYYY-MM/YYYY-MM-DD-<slug>/`: one planned post: `post.md` and `media/`.
 - `learnings.md`: what has worked and what hasn't, with a status per line.
+- `audits/`: dated write-ups of what the owner's past posts show. `data/` holds the numbers behind them (read from the dashboards, or exported): private, out of git, never uploaded anywhere.
 - `kit/`: what the setup skill works from (the interview, templates, skill blueprints, lessons). Not the owner's content.
 
 ## Rules

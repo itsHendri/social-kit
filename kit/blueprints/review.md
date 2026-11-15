@@ -5,7 +5,7 @@ Looks back at what was posted, works out what worked, and writes it down so the 
 ## What the skill must cover
 
 1. The period: since the last review, or the owner's usual cadence (weekly, monthly).
-2. Numbers come from the owner: screenshots of each app's insights, or numbers pasted in. Don't log in to anything for them.
+2. Read the numbers from each platform's dashboard with Claude in Chrome, in the owner's signed-in browser, the way `kit/audit.md` step 2 does. Only read. If that doesn't work, ask for screenshots or numbers pasted in. Never log in for them.
 3. Read: the posted posts in that period (`content/`), `brand.md` (the goals and what gets counted), `learnings.md`.
 4. For each channel:
    - The top three and bottom three posts.
@@ -18,8 +18,10 @@ Looks back at what was posted, works out what worked, and writes it down so the 
    - `retired` when it stops being true
 7. Move `active` learnings into the channel file's "What works here", or into `voice.md`, and tell the owner what changed.
 8. Keep it short: three findings at most, and one change for the next plan.
+9. Every few months (the owner picks how often), offer a full audit instead, following `kit/audit.md` with fresh numbers from the dashboards. It catches slow changes a short review misses.
 
 ## Tailoring questions
 - How often do you want to review? Weekly, every two weeks, monthly?
 - Which number matters most to you, from your goals?
 - Where do you see your numbers today (each app's insights, YouTube Studio, something else)?
+- How often should a full audit come round? Every three months, six months, once a year?

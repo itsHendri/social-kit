@@ -12,7 +12,8 @@ Nothing posts on its own. Claude writes drafts and you post them yourself.
 - Your website's address.
 - Your logo files. Drop them into `assets/logo/` before you start, or when Claude asks.
 - If you make videos with Remotion: where that project is on your computer.
-- About 45 minutes for setup. You can stop at any point and carry on later.
+- If you've posted before: the Claude in Chrome extension, and Chrome signed in to YouTube Studio, Meta Business Suite (for Instagram) and any other channel's analytics. Claude reads your numbers there to learn what has already worked: nothing to export. It only reads, and you do any signing in yourself. What it reads stays in this folder and out of git.
+- About an hour for setup. You can stop at any point and carry on later.
 
 ## Start
 
@@ -34,7 +35,9 @@ channels/<platform>.md one per channel: how often, when, what works there
 content/
   incoming/            drop new media here (a subfolder is one carousel)
   YYYY-MM/YYYY-MM-DD-<slug>/post.md   a planned post, with its media
-learnings.md           what worked and what didn't, from your reviews
+audits/                what your past posts say works, one write-up per audit
+data/                  the numbers the audit read, and any exports (stays out of git)
+learnings.md           what worked and what didn't, from audits and reviews
 .claude/skills/        your skills, written during setup
 ```
 

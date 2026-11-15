@@ -50,6 +50,7 @@ The questions setup asks, grouped by the file they fill and in the order they're
 - Do you have older content worth reusing (videos, blog posts, a talk, a newsletter)?
 - Do you edit video yourself? With what? Do you use Remotion, and where is the project?
 - Do your videos have transcripts or captions files? (YouTube Studio can export them.)
+- Which accounts have a history of posts? Those get audited next (`kit/audit.md`), before the channel questions.
 
 ## 8. Channels → `channels/<platform>.md`
 First: which channels do you want to use? Don't suggest any until they've answered. Then, for each one:
