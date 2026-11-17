@@ -11,7 +11,7 @@ Nothing posts on its own. Claude writes drafts and you post them yourself.
 - Claude Code (the terminal, or the Code tab in the Claude desktop app).
 - Your website's address.
 - If you make videos with Remotion: where that project is on your computer.
-- If you've posted before: the Claude in Chrome extension, and Chrome signed in to YouTube Studio, Meta Business Suite (for Instagram) and any other channel's analytics. Claude reads your numbers there to learn what has already worked: nothing to export. It only reads, and you do any signing in yourself. What it reads stays in this folder and out of git.
+- If you've posted before: the Claude in Chrome extension, and Chrome signed in to YouTube Studio, Instagram, LinkedIn and any other channel's analytics. Claude reads your numbers there to learn what has already worked: nothing to export. It only reads, and you do any signing in yourself. What it reads stays in this folder and out of git.
 - About an hour for setup. You can stop at any point and carry on later.
 
 ## Start

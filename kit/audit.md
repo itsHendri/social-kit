@@ -22,17 +22,30 @@ YouTube (studio.youtube.com):
 - Columns to show: views, watch time, average view duration, average percentage viewed, impressions, impressions click-through rate, subscribers gained, likes, comments, shares. Changing the columns only changes the view, not the channel.
 - Read the table page by page into `data/posts.csv`. For each top and bottom video, open its own analytics for the retention curve and traffic sources.
 
-Instagram (needs a professional account):
-- Meta Business Suite on the web (business.facebook.com), Insights, then Content. Pick the longest date range it allows, show the columns for reach, plays, likes, comments, shares and saves, and read the table.
-- Captions: open each top and bottom post on instagram.com and read its caption there.
+Instagram (needs a professional account). Instagram's own web dashboard works whether or not the account is linked to Meta Business Suite:
+- The account: instagram.com, the Professional dashboard in the left bar, Insights, Account, Last 90 days (the longest it offers). Views and the share from followers, viewers, interactions, profile visits, link taps, followers.
+- The list of posts: the profile grid. It only keeps the posts on screen loaded, so scroll in small steps and collect the post links as you go. The profile header gives the post count to check against.
+- Each post's numbers: `instagram.com/insights/media/<media id>/`. The media id is the shortcode from the post's link (`/p/<shortcode>/` or `/reel/<shortcode>/`) read as a base-64 number, alphabet `A–Z a–z 0–9 - _`. It shows views and the share from followers, viewers (reach), likes, comments, saves, shares, profile visits and link taps (photos and carousels), and follows. It works for every post, not only the last 90 days.
+- Date and caption: the post's own page.
+- Posts from before about 2025 have no reach, and their reel views are partial. Compare them on likes, comments and saves only, or leave them as a separate era.
+- Meta Business Suite (business.facebook.com, Insights, Content) shows the same in one table, but only when the Instagram account is linked to a portfolio there.
+- Read the pages. Don't call Instagram's internal web API from the page, even signed in.
 
-TikTok, LinkedIn and others: the platform's own analytics page on the web, read the same way.
+LinkedIn (a personal profile):
+- linkedin.com/analytics/creator/content, 365 days (the longest), for the totals.
+- "Show all posts" opens one table of every post: impressions, in and out of network, members reached, video views and watch time, followers gained, profile viewers, reactions, comments, reposts, saves, sends, link visits. Click "Load more" until it's gone, then read it.
+- Audience analytics for followers and their growth. Ignore the offer to boost.
+
+TikTok and others: the platform's own analytics page on the web, read the same way.
+
+Reading a lot of posts: go a batch of about ten at a time, and save what each batch read to a file straight away. Have each read return one short line per post, not the whole page: long results get cut off.
 
 Public details help too. Video titles, dates and thumbnails are on the public channel or profile page. YouTube thumbnails are at `https://i.ytimg.com/vi/<video id>/hqdefault.jpg`.
 
 Fallback, when the browser can't do it (no extension, a table too big to page through, a page that won't load):
 - YouTube: the same Advanced mode view has an export button (CSV). Downloading is the owner's OK to give: ask first.
-- Instagram: Meta Business Suite's Content view has "Export data" (CSV). Captions come from Instagram's "Download your information" (content only, JSON), which arrives by email, so start it early.
+- Instagram: Meta Business Suite's Content view has "Export data" (CSV), when the account is linked there. Captions come from Instagram's "Download your information" (content only, JSON), which arrives by email, so start it early.
+- LinkedIn: the post table has an Export button.
 - Anything else: screenshots of the ten best and ten worst posts' numbers.
 - Exports and screenshots go in `data/exports/<platform>/`, which git leaves out.
 
@@ -66,10 +79,11 @@ Write `audits/YYYY-MM-DD-audit.md`:
 - Per platform: what works and what doesn't, each with numbers and two or three example posts (linked).
 - Their best posts, with what made each one work.
 - At most five suggestions, most useful first.
+- Baselines: the medians per platform and format (reach, saves, follows) that the next audit compares against, and the last audit's baselines checked: did they hold, and what beat them?
 - What the data can't say (too few posts, missing exports, and so on).
 
 ## 6. Agree on it
-Go through the findings with the owner. They know things the numbers don't ("that one was a paid collab", "I hated making that"). Then, for what they agree with:
-- Write each finding into `learnings.md`: `active` when the evidence is strong, `watch` when it's a hunch.
+Go through the findings with the owner. They know things the numbers don't ("that one was a paid collab", "I hated making that"). For each finding they pick: keep it, keep it as a baseline, change it, or drop it. While the owner is still trying new formats, or there are only a few dozen posts, suggest a baseline: a rule narrows what gets made before the tests are in. A baseline is a number to beat (the median reach of a reel, saves per post), kept in the audit and checked by the next one. Then, for what they keep:
+- Write each finding into `learnings.md`: `active` when the evidence is strong, `watch` when it's a hunch. A finding kept as a baseline stays in the audit's Baselines list instead.
 - Add their best captions and titles to the examples in `voice.md`.
 - Keep the findings at hand for the channel round, where they shape each channel's "What works here", formats and cadence.

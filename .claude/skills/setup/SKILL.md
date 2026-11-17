@@ -38,7 +38,7 @@ Work from these files in `kit/`:
 
 2. Interview rounds 1 to 7 of `kit/interview.md`, in order: basics, goals, audience, topics, voice, look, what they make. After each round, write its file from `kit/templates/` and show a short summary of what you wrote.
 
-3. Audit what's already posted, following `kit/audit.md`. Ask which accounts have a history, then read their numbers straight from YouTube Studio, Meta Business Suite and the other dashboards with Claude in Chrome, in the owner's signed-in browser. Use exports or screenshots only where that doesn't work. Write `audits/<date>-audit.md`, and agree on the findings with the owner before writing them into `learnings.md` and `voice.md`. Skip this step for an account with no posts yet.
+3. Audit what's already posted, following `kit/audit.md`. Ask which accounts have a history, then read their numbers straight from YouTube Studio, Instagram's professional dashboard, LinkedIn's analytics and the other dashboards with Claude in Chrome, in the owner's signed-in browser. Use exports or screenshots only where that doesn't work. Write `audits/<date>-audit.md`, and agree on the findings with the owner before writing them into `learnings.md` and `voice.md`. Skip this step for an account with no posts yet.
 
 4. Channels (round 8). Bring the audit's findings into these questions ("Your Shorts bring in most of your subscribers. Keep them as a channel of their own?"). Ask which channels they want to use. Don't assume any. For each one, run the channel questions and write `channels/<platform>.md`. Check that platform's current limits (caption length, title length, hashtag cap, video length, image sizes) on its own help pages, and record them with the date checked.
 
